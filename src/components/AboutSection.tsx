@@ -1,133 +1,95 @@
-import { BookOpen, User, Users, Cross } from "lucide-react"; // Cross icon added for Christ-Centered Ministry
+import Image from "next/image";
+
+// Placeholder for the image. You'll need to place the image for Pastor Naome
+// in your 'public' directory and update the 'src' path accordingly.
+const PASTOR_NAOME_IMAGE_SRC = "/about-pst-naome.png"; // e.g., /public/pastor-naome.png
 
 export default function AboutSection() {
   return (
-    // Outer section for padding and background
-    <section id="about" className="py-20 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* === Header Section === */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-black">
-            About Pastor Naomi
-          </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Called to ministry over 15 years ago, I have dedicated my life to
-            serving God and His people through biblical teaching, pastoral
-            counseling, and spiritual guidance.
-          </p>
-        </div>
-
-        <div className="max-w-6xl mx-auto">
-          {/* === Main Content: Text and Image Block (Two Columns) === */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-20 mb-20">
-            {/* Left Column: My Journey In Faith Text */}
-            <div className="lg:col-span-2">
-              <h3 className="text-2xl font-bold mb-4 text-black">
+    // Using the same section structure as the HeroSection
+    <section
+      id="about" // Changed id to "about"
+      className="pt-16 min-h-screen flex items-center justify-center bg-gray-50"
+    >
+      <div className="container mx-auto p-4 md:p-8 lg:p-16">
+        {/* Title Section */}
+        <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight mb-8 text-black text-center">
+          About Pastor Naome
+        </h2>
+        <p className="text-center text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+          Called into ministry more than 20 years ago, I have devoted my life to
+          serving God and His people through biblical teaching, pastoral
+          counselling, and spiritual mentorship.
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+          {/* Left Column: All Text Content */}
+          <div className="flex flex-col space-y-6">
+            {/* Journey in Faith Section */}
+            <div>
+              <h3 className="text-xl font-semibold mb-3 text-black">
                 My Journey In Faith
               </h3>
-              <p className="text-base text-gray-700 mb-6">
-                My calling to ministry began during my college years when I felt
-                God&apos;s unmistakable call to serve His people. After
-                completing my **Master of Divinity** and later my **Ph.D in
-                Biblical Studies**, I have served in various pastoral roles,
-                always with a heart for counseling and spiritual direction.
+              <p className="text-sm text-gray-700 mb-3">
+                I am a teacher, author, counsellor, mentor, and businesswoman,
+                passionate about:
               </p>
-              <p className="text-base text-gray-700 mb-6">
-                I am also a **licensed professional counselor**, which allows me
-                to offer both spiritual and psychological support to those
-                seeking healing and growth. My approach integrates faith-based
-                perspectives with sound counseling practices.
+              <ul className="text-sm text-gray-700 mb-3 space-y-1 list-disc list-inside">
+                <li>Women&apos;s ministry</li>
+                <li>Marriage and pre-marital counselling</li>
+                <li>Character development</li>
+                <li>Biblical study and discipleship</li>
+              </ul>
+              <p className="text-sm text-gray-700 mb-3">
+                My ministry is built on the belief that real, lasting change
+                begins from within, as hearts are renewed and lives are aligned
+                with the character of Christ.
               </p>
-              <p className="text-base text-gray-700">
-                Beyond formal ministry, I am passionate about women&apos;s
-                ministry, family counseling, and helping individuals discover
-                their God-given purpose and calling.
+              <p className="text-sm text-gray-700 mb-3 italic">
+                Gifted with compassion, discernment, and a Spirit-led approach, 
+                I minister to the whole person — spirit, soul, and body — helping believers:
               </p>
-
-              {/* --- IMAGE PLACEHOLDER 1 (Mid-Left Floating) --- */}
-              {/* This is the placeholder that appears to the left of the text block in the original image. 
-                 It's challenging to make it 'float' mid-text purely with a standard grid/flex, 
-                 so we'll place it here to simulate its position relative to the main content area. */}
-              <div className="mt-8 md:mt-12 lg:hidden">
-                <div className="bg-gray-800 h-40 w-full rounded-lg"></div>
-              </div>
+              <ul className="text-sm text-gray-700 mb-3 space-y-1 list-disc list-inside">
+                <li>Break free from spiritual strongholds</li>
+                <li>Discover their God-given identity</li>
+                <li>Grow in spiritual maturity</li>
+                <li>Walk in the freedom Christ provides</li>
+              </ul>
             </div>
 
-            {/* Right Column: Image Placeholders (The 3 floating dark blocks) */}
-            <div className="hidden lg:grid lg:grid-cols-2 lg:gap-4 self-start">
-              {/* Image Placeholder 1 (Top Right) - Spans both columns to be wider */}
-              <div className="col-span-2 bg-gray-800 h-40 w-full rounded-lg mb-4"></div>
+            {/* Mission Statement */}
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-black">
+                Mission Statement
+              </h3>
+              <p className="text-sm text-gray-700 italic">
+                To deliver, teach, and demonstrate the living Word of God with
+                clarity and power — equipping believers to grow in character,
+                spiritual maturity, and Christlikeness.
+              </p>
+            </div>
 
-              {/* Image Placeholder 2 (Mid Left) - The "floating" one */}
-              <div className="bg-gray-800 h-40 w-full rounded-lg self-center"></div>
-
-              {/* Image Placeholder 3 (Bottom Right) - Sits to the right of Image 2 */}
-              <div className="bg-gray-800 h-40 w-full rounded-lg"></div>
+            {/* Foundation Scripture */}
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-black">
+                Foundation Scripture
+              </h3>
+              <p className="text-sm text-gray-700 italic">
+                &quot;Then God said, &apos;Let Us make man in Our image,
+                according to Our likeness…&apos;&quot; — Genesis 1:26
+              </p>
             </div>
           </div>
 
-          {/* === Core Ministry Values (Four Cards) === */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Card 1: Christ-Centered Ministry */}
-            <div className="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-              {/* ICON STYLE UPDATE: Yellow rounded div with white icon */}
-              <div className="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center mb-4">
-                <Cross className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="text-xl font-semibold mb-2 text-black">
-                Christ-Centered Ministry
-              </h4>
-              <p className="text-sm text-gray-600">
-                Every aspect of my ministry is grounded in the love and
-                teachings of Jesus Christ, emphasizing grace, mercy, and
-                redemption
-              </p>
-            </div>
-
-            {/* Card 2: Biblical Foundation */}
-            <div className="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-              {/* ICON STYLE UPDATE: Yellow rounded div with white icon */}
-              <div className="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center mb-4">
-                <BookOpen className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="text-xl font-semibold mb-2 text-black">
-                Biblical Foundation
-              </h4>
-              <p className="text-sm text-gray-600">
-                I believe in the authority and inspiration of Scripture as our
-                guide for faith, life, and spiritual growth.
-              </p>
-            </div>
-
-            {/* Card 3: Compassionate Care */}
-            <div className="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-              {/* ICON STYLE UPDATE: Yellow rounded div with white icon */}
-              <div className="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center mb-4">
-                <User className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="text-xl font-semibold mb-2 text-black">
-                Compassionate Care
-              </h4>
-              <p className="text-sm text-gray-600">
-                Providing pastoral care with empathy, understanding, and
-                unconditional love for all who seek spiritual guidance
-              </p>
-            </div>
-
-            {/* Card 4: Community Building */}
-            <div className="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-              {/* ICON STYLE UPDATE: Yellow rounded div with white icon */}
-              <div className="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="text-xl font-semibold mb-2 text-black">
-                Community Building
-              </h4>
-              <p className="text-sm text-gray-600">
-                Fostering strong Christian communities where believers can grow
-                together in faith and support one another
-              </p>
-            </div>
+          {/* Right Column: Image */}
+          <div className="hidden lg:block relative w-full h-full min-h-[600px]">
+            <Image
+              src={PASTOR_NAOME_IMAGE_SRC}
+              alt="Pastor Naome"
+              layout="fill"
+              objectFit="contain"
+              className="w-full h-full"
+              priority
+            />
           </div>
         </div>
       </div>

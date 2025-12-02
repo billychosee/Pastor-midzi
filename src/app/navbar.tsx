@@ -19,7 +19,6 @@ export default function Navbar() {
     { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#books", label: "Books" },
-    { href: "#testimonials", label: "Testimonials" },
   ];
 
   return (
@@ -28,7 +27,7 @@ export default function Navbar() {
       {/* Logo/Brand Name */}
       <div className="flex items-center">
         <Link href="/" className="text-xl font-bold text-gray-900 tracking-tight">
-          Pastor Naomi Midzi
+          Character Matters
         </Link>
       </div>
 

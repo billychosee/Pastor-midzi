@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-// Placeholder for the image. You'll need to place the image of Pastor Naomi Midzi
+// Placeholder for the image. You'll need to place the image for Character Matters
 // in your 'public' directory and update the 'src' path accordingly.
 const PASTOR_IMAGE_SRC = "/hero.png";
 
@@ -29,37 +29,44 @@ export default function HeroSection() {
 
             {/* Descriptive Text: Matched font size and text color for readability */}
             <p className="text-base text-gray-700 mb-8 max-w-xl">
-              Welcome! I&apos;m Pastor Naomi Midzi, and it&apos;s my joy to walk with
-              you on this beautiful journey of faith. Life can be full of twists
-              and turns—moments of celebration, but also seasons of uncertainty
-              and heartache. Through it all, I believe God&apos;s love is our anchor,
-              and His Word gives us the strength and peace we need.
+              Welcome to Character Matters! It&apos;s our joy to walk with you
+              on this beautiful journey of faith. Life can be full of twists and
+              turns—moments of celebration, but also seasons of uncertainty and
+              heartache. Through it all, we believe God&apos;s love is our
+              anchor, and His Word gives us the strength and peace we need.
               <br />
               <br />
-              Here, you&apos;ll find a safe and encouraging space where I offer
+              Here, you&apos;ll find a safe and encouraging space where we offer
               spiritual guidance, biblical counseling, and pastoral care to help
               you grow closer to God, discover His purpose for your life, and
-              experience the healing comfort of His presence. My prayer is that
-              as we walk together, you&apos;ll be reminded that you are never alone,
-              and that with God&apos;s love lighting the way, there is always hope
-              for tomorrow.
+              experience the healing comfort of His presence. Our prayer is that
+              as we walk together, you&apos;ll be reminded that you are never
+              alone, and that with God&apos;s love lighting the way, there is
+              always hope for tomorrow.
             </p>
 
-            {/* Buttons Section: Matched button style (Explore Services is primary/filled, the other is secondary/outlined) */}
-            <div className="flex space-x-4 mb-8">
+            {/* Buttons Section: Three specific ministry buttons */}
+            <div className="flex gap-3 mb-8">
               {/* Primary Button (Filled) */}
               <a
-                href="#services"
-                className="px-6 py-3 text-sm font-semibold rounded-lg bg-[#853A75] text-white hover:bg-[#6a2e5d] transition-colors shadow-md"
+                href="#about"
+                className="px-4 py-2 text-xs font-semibold rounded-lg bg-[#853A75] text-white hover:bg-[#6a2e5d] transition-colors shadow-md text-center whitespace-nowrap"
               >
-                Explore Services
+                Learn More About My Ministry
               </a>
               {/* Secondary Button (Outlined/Text-only with background match) */}
               <a
                 href="#services"
-                className="px-6 py-3 text-sm font-semibold rounded-lg border border-gray-300 text-gray-800 bg-white hover:bg-gray-100 transition-colors shadow-sm"
+                className="px-4 py-2 text-xs font-semibold rounded-lg border border-gray-300 text-gray-800 bg-white hover:bg-gray-100 transition-colors shadow-sm text-center whitespace-nowrap"
               >
-                Explore Services
+                Join Bible Study
+              </a>
+              {/* Tertiary Button (Outlined/Text-only with background match) */}
+              <a
+                href="#contact"
+                className="px-4 py-2 text-xs font-semibold rounded-lg border border-gray-300 text-gray-800 bg-white hover:bg-gray-100 transition-colors shadow-sm text-center whitespace-nowrap"
+              >
+                Book Counselling Session
               </a>
             </div>
 
@@ -82,7 +89,7 @@ export default function HeroSection() {
           <div className="hidden lg:block relative w-full h-full min-h-[600px]">
             <Image
               src={PASTOR_IMAGE_SRC}
-              alt="Pastor Naomi Midzi"
+              alt="Character Matters"
               // Use object-contain to preserve aspect ratio and show full image
               layout="fill"
               objectFit="contain"

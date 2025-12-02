@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 // Placeholder for the book cover image. Replace with the actual path.
-const BOOK_COVER_SRC = "/img/character-matters-cover.png";
+const BOOK_COVER_SRC = "/character-matters-cover.png";
 
 export default function BooksSection() {
   // The content for the left purple block is pulled from the image (Hero Section text reused)
   const bookDescription =
-    "Welcome! I'm Pastor Naomi Midzi, and it's my joy to walk with you on this beautiful journey of faith. Life can be full of twists and turns—moments of celebration, but also seasons of uncertainty and heartache. Through it all, I believe God's love is our anchor, and His Word gives us the strength and peace we need.\n\nHere, you'll find a safe and encouraging space where I offer spiritual guidance, biblical counseling, and pastoral care to help you grow closer to God, discover His purpose for your life, and experience the healing comfort of His presence. My prayer is that as we walk together, you'll be reminded that you are never alone, and that with God's love lighting the way, there is always hope for tomorrow";
+    "A powerful and practical guide to understanding the importance of character in the Christian walk. This book helps believers align their daily choices, attitudes, and lifestyle with the heart of Christ.";
 
   return (
     // Set background to white for the whole section as per the image
@@ -75,7 +75,7 @@ export default function BooksSection() {
                 alt="Character Matters Book Cover"
                 width={350} // Sizing it appropriately
                 height={500}
-                className="object-contain drop-shadow-2xl"
+                className="object-contain"
               />
             </div>
 
@@ -97,3 +97,4 @@ export default function BooksSection() {
     </section>
   );
 }
+

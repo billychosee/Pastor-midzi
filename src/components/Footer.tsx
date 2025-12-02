@@ -17,7 +17,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-full bg-[#853A75] flex items-center justify-center mr-2">
                 <Cross className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold">Pastor Naomi Midzi</span>
+              <span className="text-2xl font-bold">Character Matters</span>
             </div>
 
             <p className="text-sm text-gray-600 mb-4 leading-relaxed">
@@ -37,17 +37,19 @@ export default function Footer() {
             <h4 className="text-xl font-semibold mb-4 text-black">
               Quick links
             </h4>
-            <ul className="space-y-2 text-gray-600">
-              {/* Note: The image has a typo ("About Pastor Sarah"). Corrected to "Naomi" for context consistency. */}
-              <li>
+            <ul className="space-y-3 text-gray-600">
+              {/* Custom bullet points for quick links */}
+              <li className="flex items-start">
+                <span className="w-2 h-2 rounded-full bg-[#853A75] mr-3 mt-2 shrink-0"></span>
                 <a
                   href="#about"
                   className="hover:text-[#853A75] transition-colors"
                 >
-                  About Pastor Naomi
+                  About Character Matters
                 </a>
               </li>
-              <li>
+              <li className="flex items-start">
+                <span className="w-2 h-2 rounded-full bg-[#853A75] mr-3 mt-2 shrink-0"></span>
                 <a
                   href="#services"
                   className="hover:text-[#853A75] transition-colors"
@@ -55,7 +57,8 @@ export default function Footer() {
                   Ministry Services
                 </a>
               </li>
-              <li>
+              <li className="flex items-start">
+                <span className="w-2 h-2 rounded-full bg-[#853A75] mr-3 mt-2 shrink-0"></span>
                 <a
                   href="#books"
                   className="hover:text-[#853A75] transition-colors"
@@ -63,15 +66,8 @@ export default function Footer() {
                   Books & Resources
                 </a>
               </li>
-              <li>
-                <a
-                  href="#testimonials"
-                  className="hover:text-[#853A75] transition-colors"
-                >
-                  Testimonials
-                </a>
-              </li>
-              <li>
+              <li className="flex items-start">
+                <span className="w-2 h-2 rounded-full bg-[#853A75] mr-3 mt-2 shrink-0"></span>
                 <a
                   href="#contact"
                   className="hover:text-[#853A75] transition-colors"
@@ -110,7 +106,7 @@ export default function Footer() {
 
         {/* === Copyright === */}
         <div className="text-center pb-8 text-gray-500 text-sm">
-          &copy; 2025 Pastor Naomi Midzi. All rights reserved
+          &copy; 2025 Character Matters. All rights reserved
         </div>
       </div>
     </footer>

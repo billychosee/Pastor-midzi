@@ -1,19 +1,23 @@
-// Placeholder for a generic service image. Replace with actual image paths.
-const INDIVIDUAL_COUNSELING_IMG = "/img/individual-counseling.jpg";
-const MARRIAGE_FAMILY_IMG = "/img/marriage-family.jpg";
-const BIBLE_STUDY_IMG = "/img/bible-study.jpg";
+import Image from "next/image";
+
+// Ministry service images
+const INDIVIDUAL_COUNSELING_IMG = "/ministry1.png";
+const MARRIAGE_FAMILY_IMG = "/ministry2.png";
+const BIBLE_STUDY_IMG = "/ministry3.png";
 
 // Component to render a service card based on the image design
-const ServiceCard = ({ title, description, includedItems }: { title: string; description: string; includedItems: string[] }) => {
+const ServiceCard = ({ title, description, includedItems, imageSrc }: { title: string; description: string; includedItems: string[]; imageSrc: string }) => {
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-      {/* Image Placeholder - Matching the top full-width image with rounded corners on top only */}
+      {/* Image Section */}
       <div className="relative h-48 w-full">
-        {/* Placeholder for the Image component (assuming you'll use actual images later) */}
-        {/* You would replace the div with: <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" /> */}
-        <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-600 font-bold">
-          [Image Placeholder]
-        </div>
+        <Image 
+          src={imageSrc} 
+          alt={title} 
+          layout="fill" 
+          objectFit="cover" 
+          className="w-full h-full"
+        />
       </div>
 
       <div className="p-6 flex flex-col grow">
@@ -112,6 +116,7 @@ export default function ServicesSection() {
               title={service.title}
               description={service.description}
               includedItems={service.includedItems}
+              imageSrc={service.imageSrc}
             />
           ))}
         </div>
