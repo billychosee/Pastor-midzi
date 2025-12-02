@@ -21,7 +21,7 @@ export default function ContactSection() {
         </div>
 
         {/* === Main Content: Two-Column Cards === */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           {/* === Left Card: Contact Information === */}
           <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between">
             <div>

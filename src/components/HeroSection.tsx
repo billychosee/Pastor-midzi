@@ -46,25 +46,25 @@ export default function HeroSection() {
             </p>
 
             {/* Buttons Section: Three specific ministry buttons */}
-            <div className="flex gap-3 mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 mb-8">
               {/* Primary Button (Filled) */}
               <a
                 href="#about"
-                className="px-4 py-2 text-xs font-semibold rounded-lg bg-[#853A75] text-white hover:bg-[#6a2e5d] transition-colors shadow-md text-center whitespace-nowrap"
+                className="px-4 py-2 text-sm font-semibold rounded-lg bg-[#853A75] text-white hover:bg-[#6a2e5d] transition-colors shadow-md text-center whitespace-nowrap"
               >
                 Learn More About My Ministry
               </a>
               {/* Secondary Button (Outlined/Text-only with background match) */}
               <a
                 href="#services"
-                className="px-4 py-2 text-xs font-semibold rounded-lg border border-gray-300 text-gray-800 bg-white hover:bg-gray-100 transition-colors shadow-sm text-center whitespace-nowrap"
+                className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 text-gray-800 bg-white hover:bg-gray-100 transition-colors shadow-sm text-center whitespace-nowrap"
               >
                 Join Bible Study
               </a>
               {/* Tertiary Button (Outlined/Text-only with background match) */}
               <a
                 href="#contact"
-                className="px-4 py-2 text-xs font-semibold rounded-lg border border-gray-300 text-gray-800 bg-white hover:bg-gray-100 transition-colors shadow-sm text-center whitespace-nowrap"
+                className="px-4 py-2 text-sm font-semibold rounded-lg border border-gray-300 text-gray-800 bg-white hover:bg-gray-100 transition-colors shadow-sm text-center whitespace-nowrap"
               >
                 Book Counselling Session
               </a>

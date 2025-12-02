@@ -25,12 +25,12 @@ export default function BooksSection() {
           <div className="bg-[#853A75] p-8 rounded-xl shadow-2xl flex flex-col justify-between">
             <div className="text-white">
               {/* Main Title */}
-              <h3 className="text-6xl md:text-7xl font-extrabold leading-none mb-6 tracking-tight">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-none mb-6 tracking-tight">
                 CHARACTER MATTERS
               </h3>
 
               {/* Description (Pre-wrap preserves the line breaks from the original text block) */}
-              <p className="text-base leading-relaxed whitespace-pre-wrap mb-10">
+              <p className="text-sm sm:text-base leading-relaxed whitespace-pre-wrap mb-10">
                 {bookDescription}
               </p>
             </div>

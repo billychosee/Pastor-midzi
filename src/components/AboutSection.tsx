@@ -29,26 +29,26 @@ export default function AboutSection() {
               <h3 className="text-xl font-semibold mb-3 text-black">
                 My Journey In Faith
               </h3>
-              <p className="text-sm text-gray-700 mb-3">
+              <p className="text-sm md:text-base text-gray-700 mb-3">
                 I am a teacher, author, counsellor, mentor, and businesswoman,
                 passionate about:
               </p>
-              <ul className="text-sm text-gray-700 mb-3 space-y-1 list-disc list-inside">
+              <ul className="text-sm md:text-base text-gray-700 mb-3 space-y-1 list-disc list-inside">
                 <li>Women&apos;s ministry</li>
                 <li>Marriage and pre-marital counselling</li>
                 <li>Character development</li>
                 <li>Biblical study and discipleship</li>
               </ul>
-              <p className="text-sm text-gray-700 mb-3">
+              <p className="text-sm md:text-base text-gray-700 mb-3">
                 My ministry is built on the belief that real, lasting change
                 begins from within, as hearts are renewed and lives are aligned
                 with the character of Christ.
               </p>
-              <p className="text-sm text-gray-700 mb-3 italic">
+              <p className="text-sm md:text-base text-gray-700 mb-3 italic">
                 Gifted with compassion, discernment, and a Spirit-led approach, 
                 I minister to the whole person — spirit, soul, and body — helping believers:
               </p>
-              <ul className="text-sm text-gray-700 mb-3 space-y-1 list-disc list-inside">
+              <ul className="text-sm md:text-base text-gray-700 mb-3 space-y-1 list-disc list-inside">
                 <li>Break free from spiritual strongholds</li>
                 <li>Discover their God-given identity</li>
                 <li>Grow in spiritual maturity</li>
@@ -61,7 +61,7 @@ export default function AboutSection() {
               <h3 className="text-xl font-semibold mb-2 text-black">
                 Mission Statement
               </h3>
-              <p className="text-sm text-gray-700 italic">
+              <p className="text-sm md:text-base text-gray-700 italic">
                 To deliver, teach, and demonstrate the living Word of God with
                 clarity and power — equipping believers to grow in character,
                 spiritual maturity, and Christlikeness.
@@ -73,7 +73,7 @@ export default function AboutSection() {
               <h3 className="text-xl font-semibold mb-2 text-black">
                 Foundation Scripture
               </h3>
-              <p className="text-sm text-gray-700 italic">
+              <p className="text-sm md:text-base text-gray-700 italic">
                 &quot;Then God said, &apos;Let Us make man in Our image,
                 according to Our likeness…&apos;&quot; — Genesis 1:26
               </p>
